@@ -432,6 +432,96 @@ a:hover { color: var(--gold); }
 }
 .partner-logo:hover { opacity: 1; }
 
+/* VGT HUB BLOCK */
+.vgt-hub-block {
+  margin-top: 56px;
+  padding-top: 48px;
+  border-top: 1px solid rgba(184,150,90,.25);
+}
+.vgt-hub-title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.vgt-hub-intro {
+  text-align: center;
+  color: rgba(255,255,255,.7);
+  font-size: .92rem;
+  margin-bottom: 32px;
+}
+.vgt-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+.vgt-hub-card {
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(184,150,90,.25);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform .25s, background .25s;
+}
+.vgt-hub-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.12);
+}
+.vgt-hub-img-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.vgt-hub-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform .35s;
+}
+.vgt-hub-card:hover .vgt-hub-img { transform: scale(1.04); }
+.vgt-hub-badge {
+  position: absolute;
+  top: 12px; left: 12px;
+  background: var(--gold);
+  color: var(--navy);
+  font-size: .68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.vgt-hub-info {
+  padding: 20px 22px 24px;
+}
+.vgt-hub-info h4 {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: #fff;
+  margin: 0 0 4px;
+}
+.vgt-hub-address {
+  font-size: .78rem;
+  color: var(--gold);
+  margin-bottom: 10px;
+  font-style: italic;
+}
+.vgt-hub-info p {
+  font-size: .85rem;
+  color: rgba(255,255,255,.75);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.vgt-hub-link {
+  color: var(--gold);
+  font-size: .82rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color .2s;
+}
+.vgt-hub-link:hover { color: #fff; }
+
 /* VGT TESI NOTE */
 .vgt-tesi-note {
   font-size: .75rem; color: rgba(255,255,255,.6);
