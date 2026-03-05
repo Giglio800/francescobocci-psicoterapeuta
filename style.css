@@ -114,13 +114,13 @@ a:hover { color: var(--gold); }
 
 /* ---- BUTTONS ---- */
 .btn-primary {
-  display: inline-block; background: var(--gold); color: var(--navy);
+  display: inline-block; background: var(--gold); color: #fff;
   padding: 13px 30px; border-radius: var(--radius);
   font-weight: 600; font-size: .9rem; letter-spacing: .04em;
   transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
   border: none; cursor: pointer;
 }
-.btn-primary:hover { background: var(--gold-lt); color: var(--navy); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(184,150,90,.35); }
+.btn-primary:hover { background: var(--gold-lt); color: #fff; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(184,150,90,.35); }
 
 .btn-secondary {
   display: inline-block; background: transparent; color: #fff;
@@ -569,6 +569,11 @@ a.pub-title:hover { color: var(--gold); }
   font-size: .85rem; color: rgba(255,255,255,.78);
   padding: 6px 0 6px 14px; border-left: 1px solid var(--gold);
 }
+.psicodiagnosi-list li a {
+  color: var(--gold-lt) !important;
+  text-decoration: underline;
+}
+.psicodiagnosi-list li a:hover { color: #fff !important; }
 
 /* COLLABORATORI */
 .collaboratori-block {
