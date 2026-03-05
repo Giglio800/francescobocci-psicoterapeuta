@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+  <rect width="280" height="60" fill="transparent"/>
+  <circle cx="28" cy="30" r="18" fill="#c0392b" opacity="0.85"/>
+  <text x="22" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white">SV</text>
+  <text x="56" y="28" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#1a1a2e">Sentire le Voci</text>
+  <text x="56" y="44" font-family="Arial, sans-serif" font-size="9" fill="#555" letter-spacing="0.5">Associazione Nazionale</text>
+</svg>
