@@ -153,7 +153,7 @@ a:hover { color: var(--gold); }
 }
 .hero-content {
   position: relative; z-index: 2;
-  max-width: 680px; padding: 60px 24px 60px 60px;
+  max-width: 800px; padding: 60px 24px 60px 60px;
 }
 .hero-badge {
   display: inline-block;
@@ -188,15 +188,7 @@ a:hover { color: var(--gold); }
 }
 .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
-.hero-photo-area {
-  position: absolute; right: 0; bottom: 0; top: 68px; z-index: 2;
-  width: 42%; max-width: 520px;
-  overflow: hidden;
-}
-.hero-photo-area img {
-  width: 100%; height: 100%; object-fit: cover; object-position: top center;
-  filter: brightness(.92) contrast(1.05);
-}
+.hero-photo-area { display: none; }
 .hero-photo-gradient {
   position: absolute; inset: 0;
   background: linear-gradient(to right, var(--navy) 0%, transparent 35%),
@@ -289,8 +281,8 @@ a:hover { color: var(--gold); }
   border-radius: 3px; border-left: 2px solid var(--gold);
 }
 .emdr-tag {
-  background: var(--navy) !important; color: #fff !important;
-  border-left-color: var(--gold) !important; font-weight: 600 !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
 }
 
 .contact-quick {
@@ -395,7 +387,50 @@ a:hover { color: var(--gold); }
 .servizio-link { font-size: .82rem; color: var(--navy); font-weight: 600; }
 .servizio-link:hover { color: var(--gold); }
 
-/* EMDR BADGE */
+/* EMDR LABEL (no background) */
+.emdr-cert-label {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--navy); font-size: .78rem; font-weight: 600;
+  letter-spacing: .06em; text-transform: uppercase;
+  border-bottom: 1.5px solid var(--gold); padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+.emdr-cert-label::before { content: "✓"; color: var(--gold); }
+
+/* SEDE PHOTO PLACEHOLDER */
+.sede-photo-placeholder {
+  width: 100%; height: 220px;
+  background: linear-gradient(135deg, var(--cream) 0%, #e8e0d5 100%);
+  border-radius: var(--radius) var(--radius) 0 0;
+  display: flex; align-items: center; justify-content: center;
+}
+
+/* VGT LOGO */
+.vgt-logo-img {
+  max-width: 160px; height: auto;
+  display: block; margin: 0 auto 8px;
+  filter: brightness(0) invert(1);
+}
+.footer-vgt-img {
+  max-width: 120px; height: auto;
+  display: block; margin: 0 auto 8px;
+  filter: brightness(0) invert(1);
+}
+
+/* VGT TESI NOTE */
+.vgt-tesi-note {
+  font-size: .75rem; color: rgba(255,255,255,.6);
+  margin-top: 10px; font-style: italic;
+}
+
+/* PUB-TITLE AS LINK */
+a.pub-title {
+  color: rgba(255,255,255,.85); text-decoration: underline;
+  font-size: .85rem;
+}
+a.pub-title:hover { color: var(--gold); }
+
+/* EMDR BADGE (legacy, kept for compatibility) */
 .emdr-cert-badge {
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--navy); color: #fff;
@@ -828,7 +863,6 @@ a:hover { color: var(--gold); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .psicodiagnosi-content { grid-template-columns: 1fr; }
   .contatti-grid { grid-template-columns: 1fr; }
-  .hero-photo-area { display: none; }
   .hero-content { padding: 60px 24px; max-width: 100%; }
 }
 
